@@ -7,7 +7,7 @@ before_install:
   - pip2 install pysqlcipher --install-option="--bundled"
 
 install:
-  - pip install -r requirements.txt
+  - pip2 install -r requirements.txt
 
 script:
-    - python pm.py
+    - python pm.py < test.py

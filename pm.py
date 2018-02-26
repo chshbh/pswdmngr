@@ -11,7 +11,7 @@ def login():
     countdown = 0
     while countdown < 3:
         try:
-            p1 = getpass.getpass(
+            p1 = raw_input(
                 "Enter master password, %s\n" % getpass.getuser())
             db.init('passwords.db', passphrase=p1)
             Service.create_table(fail_silently=True)
