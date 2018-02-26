@@ -5,4 +5,4 @@ Install peewee, playhouse.sqlcipher_ext and other modules.
 
 NO GUI, runs on terminal as '''python2 pm.py'''
 
-No plans to export on Python3 (as of now).
+~~No plans to export on Python3 (as of now).~~
