@@ -5,6 +5,7 @@ python:
 
 before_install:
   - sudo apt-get install sqlcipher
+  
 install:
   - pip install -r requirements.txt
 
