@@ -10,4 +10,4 @@ install:
   - pip2 install -r requirements.txt
 
 script:
-    - python pm.py < test.py
+    - python pm.py < test.txt
