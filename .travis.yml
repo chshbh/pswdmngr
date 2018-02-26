@@ -6,10 +6,15 @@ python:
 before_install:
   - sudo apt-get install sqlite3
   - sudo apt-get install libsqlite3-dev
-  - sudo apt-get install sqlcipher
+  - git clone https://github.com/leapcode/pysqlcipher/
+  - cd pysqlcipher
+  - python2 setup.py build_sqlcipher  
   - sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
   - automake autotools-dev g++ g++-4.8 libbison-dev libc6-dev libsigsegv2 libssl-doc libstdc++-4.8-dev linux-libc-dev m4
   - autoconf automake autotools-dev bison build-essential g++ g++-4.8 libbison-dev libc6-dev libsigsegv2 libssl-dev libssl-doc libstdc++-4.8-dev linux-libc-dev m4 zlib1g-dev
+
+after_install:
+  - sudo python setup.py install
 
 install:
   - pip install -r requirements.txt
