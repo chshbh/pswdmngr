@@ -7,7 +7,7 @@ before_install:
   - pip2 install pysqlcipher --install-option="--bundled"
 
 install:
-  - pip2 install -r ../.travis/requirements.txt
+  - pip2 install -r ./.travis/requirements.txt
 
 script:
-    - python pm.py < ../.travis/test.txt
+    - python pm.py < ./.travis/test.txt
