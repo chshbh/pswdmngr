@@ -3,7 +3,6 @@
 
 -  Check .travis.yaml file for easy build.
 
--  ~~No plans to export on Python3.~~
 ## Description
 - SqlCipher Database is used to encrypt the database file with AES. 
 - peewee ORM is used to map and interact with the database. 
